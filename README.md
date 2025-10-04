@@ -49,10 +49,11 @@ Avinshi is an autonomous AI agent platform featuring 65+ specialized agents buil
 
 ```bash
 # Clone the repository
-git clone https://github.com/veerasgutta/enterprise-ai-platform.git
-cd enterprise-ai-platform
+git clone https://github.com/avinshi/avinshi.git
+cd avinshi
 
 # Install Python dependencies
+cd platform
 pip install -r requirements.txt
 
 # Set up environment variables
@@ -63,18 +64,20 @@ cp .env.example .env
 ### Quick Start
 
 ```python
-from avinshi import AgentOrchestrator
+from platform.orchestration_hub import AgentOrchestrator
+from platform.foundation_agents import FoundationAgents
 
 # Initialize the platform
 orchestrator = AgentOrchestrator()
+agents = FoundationAgents()
 
 # Run autonomous code analysis
-results = orchestrator.analyze_codebase("./your-project")
+results = agents.analyze_codebase("./your-project")
 
 # Generate fixes automatically
-fixes = orchestrator.auto_fix(results)
+fixes = agents.auto_fix(results)
 
-# Deploy with tests
+# Deploy with autonomous testing
 orchestrator.deploy_with_tests(fixes)
 ```
 
@@ -125,26 +128,30 @@ orchestrator.deploy_with_tests(fixes)
 
 ```
 avinshi/
-├── platform/           # Core AI agent platform
-│   ├── agents/        # 65+ specialized agents
-│   ├── orchestration/ # Multi-agent coordination
-│   ├── frameworks/    # Semantic Kernel, AutoGen
-│   └── integrations/  # External tool connectors
-└── website/           # Marketing site
-    ├── index.html    # Homepage
-    └── assets/       # CSS, images, fonts
+├── platform/                      # Core AI agent platform
+│   ├── foundation_agents.py      # 65+ specialized agents (26KB)
+│   ├── semantic_kernel_enterprise.py  # Microsoft SK integration (15KB)
+│   ├── autogen_teams.py          # Multi-agent orchestration (11KB)
+│   ├── orchestration_hub.py      # Agent coordination (3.7KB)
+│   ├── config.py                 # Configuration management
+│   ├── requirements.txt          # Python dependencies
+│   └── README.md                 # Platform documentation
+├── website/                       # Marketing site
+│   ├── index.html                # Homepage with waitlist
+│   └── assets/
+│       ├── style.css             # Styles
+│       ├── logo/                 # Logo assets
+│       └── favicon/              # Favicon files
+├── .env.example                   # Environment template
+├── .gitignore                     # Git exclusions
+├── LICENSE                        # MIT license
+└── README.md                      # This file
 ```
 
 ## Documentation
 
-- [Getting Started Guide](docs/getting-started.md)
-- [API Reference](docs/api-reference.md)
-- [Architecture](docs/architecture.md)
-- [Examples](docs/examples.md)
-
-## Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+- [Platform Guide](platform/README.md) - Core platform setup and usage
+- [Website](https://avinshi.com) - Marketing site and waitlist
 
 ## License
 
@@ -154,7 +161,42 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 - **Email**: hello@avinshi.com
 - **Website**: https://avinshi.com
-- **GitHub**: https://github.com/veerasgutta/enterprise-ai-platform
+- **GitHub**: https://github.com/avinshi/avinshi (private)
+
+## Deployment
+
+### Automatic Deployment (CI/CD)
+
+The website automatically deploys to GitHub Pages on every push to `main`:
+
+```yaml
+# Triggered by changes to:
+- website/**
+- .github/workflows/deploy.yml
+
+# Deploys to:
+https://avinshi.com
+```
+
+**Manual Deployment:**
+```bash
+# Make changes to website
+cd website
+# Edit files...
+
+# Commit and push - auto-deploys!
+git add .
+git commit -m "Update website"
+git push
+```
+
+GitHub Actions will automatically:
+1. ✅ Build and test
+2. ✅ Deploy to GitHub Pages
+3. ✅ Update avinshi.com
+4. ✅ Notify you of status
+
+**View deployments:** [Actions tab](https://github.com/avinshi/avinshi/actions)
 
 ## Roadmap
 
@@ -162,6 +204,8 @@ MIT License - see [LICENSE](LICENSE) for details.
 - [x] Microsoft Semantic Kernel integration
 - [x] AutoGen multi-agent orchestration
 - [x] Self-analysis validation ($243K value demonstrated)
+- [x] Website with waitlist form
+- [x] CI/CD automatic deployment
 - [ ] Customer portal
 - [ ] Pricing page
 - [ ] Documentation site
