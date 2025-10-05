@@ -581,42 +581,261 @@ section {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    .navbar {
-        width: calc(100% - var(--space-4));
-        top: var(--space-2);
-    }
-    
-    .nav-menu {
-        gap: var(--space-4);
-    }
-    
-    .hero {
-        padding: calc(var(--space-20) + var(--space-8)) 0 var(--space-16);
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 var(--space-5);
     }
     
     .hero-stats {
         grid-template-columns: repeat(2, 1fr);
-        gap: var(--space-4);
+        gap: var(--space-6);
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --space-6: 1rem;
+        --space-8: 1.5rem;
+        --space-12: 2rem;
+        --space-16: 2.5rem;
+        --space-20: 3rem;
+        --space-24: 4rem;
+    }
+    
+    .container {
+        padding: 0 var(--space-4);
+    }
+    
+    /* Navigation */
+    .navbar {
+        width: calc(100% - var(--space-4));
+        top: var(--space-2);
+        padding: 0;
+    }
+    
+    .nav-container {
+        padding: var(--space-2) var(--space-4);
+    }
+    
+    .nav-brand {
+        font-size: 1.125rem;
+    }
+    
+    .nav-brand img {
+        height: 24px;
+    }
+    
+    .nav-menu {
+        gap: var(--space-3);
+        font-size: 0.875rem;
+    }
+    
+    .nav-link {
+        font-size: 0.875rem;
+    }
+    
+    .nav-btn {
+        padding: var(--space-2) var(--space-4);
+        font-size: 0.875rem;
+    }
+    
+    /* Hero */
+    .hero {
+        padding: calc(var(--space-16) + var(--space-8)) 0 var(--space-12);
+    }
+    
+    .hero-content {
+        gap: var(--space-5);
+    }
+    
+    .hero-badge {
+        font-size: 0.8125rem;
+        padding: var(--space-1) var(--space-3);
+    }
+    
+    .hero-title {
+        font-size: clamp(2rem, 10vw, 3.5rem);
+        line-height: 1.15;
+    }
+    
+    .hero-subtitle {
+        font-size: clamp(1rem, 4vw, 1.125rem);
+        padding: 0 var(--space-2);
+    }
+    
+    .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-3);
+        margin-top: var(--space-6);
+    }
+    
+    .stat {
+        padding: var(--space-4);
+    }
+    
+    .stat-number {
+        font-size: 1.875rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8125rem;
     }
     
     .hero-actions {
         flex-direction: column;
         width: 100%;
+        gap: var(--space-3);
     }
     
     .btn {
         width: 100%;
         justify-content: center;
+        padding: var(--space-4) var(--space-5);
     }
     
-    .comparison-header,
+    /* Demo Window */
+    .demo-container {
+        margin-top: var(--space-8);
+    }
+    
+    .demo-header {
+        padding: var(--space-3) var(--space-4);
+    }
+    
+    .demo-title {
+        font-size: 0.8125rem;
+    }
+    
+    .demo-content {
+        padding: var(--space-4);
+        min-height: 250px;
+    }
+    
+    /* Sections */
+    section {
+        padding: var(--space-16) 0;
+    }
+    
+    .section-header {
+        margin-bottom: var(--space-8);
+    }
+    
+    .section-header h2 {
+        font-size: clamp(1.75rem, 6vw, 2.5rem);
+    }
+    
+    .section-header p {
+        font-size: 1rem;
+        padding: 0 var(--space-2);
+    }
+    
+    /* Comparison Table */
+    .comparison-table {
+        gap: var(--space-3);
+        margin-top: var(--space-8);
+    }
+    
+    .comparison-header {
+        display: none; /* Hide header on mobile */
+    }
+    
     .comparison-row {
         grid-template-columns: 1fr;
+        gap: var(--space-2);
+        padding: var(--space-4);
     }
     
+    .comparison-feature {
+        font-size: 1rem;
+        padding-bottom: var(--space-2);
+        border-bottom: 1px solid var(--border-subtle);
+    }
+    
+    .comparison-us,
+    .comparison-others {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+    }
+    
+    .comparison-us::before {
+        content: '✓ Avinshi: ';
+        font-weight: 600;
+        color: var(--text-secondary);
+    }
+    
+    .comparison-others::before {
+        content: '○ Others: ';
+        font-weight: 600;
+        color: var(--text-secondary);
+    }
+    
+    /* Feature Cards */
     .features-grid {
         grid-template-columns: 1fr;
+        gap: var(--space-4);
+        margin-top: var(--space-8);
+    }
+    
+    .feature-card {
+        padding: var(--space-6);
+    }
+    
+    .feature-icon {
+        font-size: 2rem;
+        margin-bottom: var(--space-3);
+    }
+    
+    .feature-card h3 {
+        font-size: 1.125rem;
+    }
+    
+    .feature-card p {
+        font-size: 0.9375rem;
+    }
+    
+    /* Typography */
+    h1 { font-size: clamp(2rem, 8vw, 3rem); }
+    h2 { font-size: clamp(1.75rem, 6vw, 2.5rem); }
+    h3 { font-size: clamp(1.25rem, 4vw, 1.75rem); }
+    
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu {
+        display: none; /* Hide full menu on very small screens */
+    }
+    
+    .navbar {
+        width: calc(100% - var(--space-3));
+    }
+    
+    .nav-container {
+        justify-content: center;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+    }
+    
+    .stat {
+        padding: var(--space-4) var(--space-5);
+    }
+    
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: var(--space-1) var(--space-2);
+        text-align: center;
+    }
+    
+    .demo-content {
+        padding: var(--space-3);
+        min-height: 200px;
+        font-size: 0.875rem;
     }
 }
 
