@@ -1,0 +1,14 @@
+# Avinshi - AI Agents Platform
+# https://avinshi.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://avinshi.com/sitemap.xml
+
+# Crawl delay (be nice to bots)
+Crawl-delay: 1
+
+# Disallow nothing - we want full indexing
+Disallow:

@@ -73,6 +73,42 @@
       ]
     }
     </script>
+    
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX', {
+        'page_title': 'Avinshi - AI Agents Platform',
+        'anonymize_ip': true,
+        'cookie_flags': 'SameSite=None;Secure'
+      });
+      
+      // Track waitlist button clicks
+      document.addEventListener('DOMContentLoaded', function() {
+        const tallyButtons = document.querySelectorAll('[data-tally-open]');
+        tallyButtons.forEach(btn => {
+          btn.addEventListener('click', function() {
+            gtag('event', 'click_waitlist_button', {
+              'event_category': 'engagement',
+              'event_label': 'Waitlist CTA'
+            });
+          });
+        });
+        
+        // Track navigation clicks
+        document.querySelectorAll('.nav-link, .nav-btn').forEach(link => {
+          link.addEventListener('click', function(e) {
+            gtag('event', 'navigation', {
+              'event_category': 'engagement',
+              'event_label': this.textContent
+            });
+          });
+        });
+      });
+    </script>
 </head>
 <body>
 
