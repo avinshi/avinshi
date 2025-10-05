@@ -1,10 +1,18 @@
 # avinshi
 
-ai agents that code, test, deploy, and optimize—autonomously
+**ai agents that code, test, deploy, and optimize—autonomously**
 
-## Overview
+[![Website](https://img.shields.io/badge/Website-avinshi.com-8B5CF6?style=for-the-badge)](https://avinshi.com)
+[![Waitlist](https://img.shields.io/badge/Join-Waitlist-06B6D4?style=for-the-badge)](https://avinshi.com)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-Avinshi is an autonomous AI agent platform featuring 65+ specialized agents built on Microsoft Semantic Kernel and AutoGen. The platform delivers $555.8M in documented annual value across engineering velocity, quality improvement, and innovation capacity.
+## 🚀 Transform Your Engineering Team
+
+Avinshi is an autonomous AI agent platform featuring **65+ specialized agents** built on Microsoft Semantic Kernel and AutoGen. We deliver **$555.8M in documented annual value** across engineering velocity, quality improvement, and innovation capacity.
+
+**Website:** [avinshi.com](https://avinshi.com)
+
+---
 
 ## Key Features
 
@@ -37,49 +45,20 @@ Avinshi is an autonomous AI agent platform featuring 65+ specialized agents buil
 - Jenkins / CircleCI / GitHub Actions
 - Docker / Kubernetes
 
-## Getting Started
+## 🚀 Get Started
 
-### Prerequisites
-- Python 3.11+
-- .NET 8 SDK
-- Docker (optional)
-- Azure OpenAI or OpenAI API key
+### Join the Waitlist
 
-### Installation
+Visit [avinshi.com](https://avinshi.com) to join our early access waitlist.
 
-```bash
-# Clone the repository
-git clone https://github.com/avinshi/avinshi.git
-cd avinshi
+**Benefits:**
+- 50% off first 3 months
+- Priority support
+- Early access to new features
 
-# Install Python dependencies
-cd platform
-pip install -r requirements.txt
+### For Developers
 
-# Set up environment variables
-cp .env.example .env
-# Edit .env with your API keys
-```
-
-### Quick Start
-
-```python
-from platform.orchestration_hub import AgentOrchestrator
-from platform.foundation_agents import FoundationAgents
-
-# Initialize the platform
-orchestrator = AgentOrchestrator()
-agents = FoundationAgents()
-
-# Run autonomous code analysis
-results = agents.analyze_codebase("./your-project")
-
-# Generate fixes automatically
-fixes = agents.auto_fix(results)
-
-# Deploy with autonomous testing
-orchestrator.deploy_with_tests(fixes)
-```
+Interested in the platform code? Contact us at hello@avinshi.com for access to our private repository.
 
 ## Use Cases
 
@@ -124,108 +103,57 @@ orchestrator.deploy_with_tests(fixes)
 - Faster time to market
 - Risk-free exploration
 
-## Architecture
+## 🏗️ Repository Structure
 
 ```
 avinshi/
-├── platform/                      # Core AI agent platform
-│   ├── foundation_agents.py      # 65+ specialized agents (26KB)
-│   ├── semantic_kernel_enterprise.py  # Microsoft SK integration (15KB)
-│   ├── autogen_teams.py          # Multi-agent orchestration (11KB)
-│   ├── orchestration_hub.py      # Agent coordination (3.7KB)
-│   ├── config.py                 # Configuration management
-│   ├── requirements.txt          # Python dependencies
-│   └── README.md                 # Platform documentation
-├── website/                       # Marketing site
-│   ├── index.html                # Homepage with waitlist
-│   └── assets/
-│       ├── style.css             # Styles
-│       ├── logo/                 # Logo assets
-│       └── favicon/              # Favicon files
-├── .env.example                   # Environment template
-├── .gitignore                     # Git exclusions
-├── LICENSE                        # MIT license
-└── README.md                      # This file
+├── website/              # Marketing website
+│   ├── index.html       # Homepage with waitlist
+│   └── assets/          # Styles, logo, favicon
+├── .github/
+│   └── workflows/       # CI/CD for website deployment
+├── LICENSE              # MIT license
+├── SECURITY.md          # Security policy
+└── README.md            # This file
 ```
 
-## Documentation
+**Platform code** is maintained in a separate private repository.
 
-- [Platform Guide](platform/README.md) - Core platform setup and usage
-- [Website](https://avinshi.com) - Marketing site and waitlist
+## 📚 Documentation
+
+- **Website**: https://avinshi.com
+- **Email**: hello@avinshi.com
+- **Platform code**: Private repository (contact for access)
 
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
 
-## Support
+## 🔒 Security
 
-- **Email**: hello@avinshi.com
-- **Website**: https://avinshi.com
-- **GitHub**: https://github.com/avinshi/avinshi (private)
+We take security seriously. See [SECURITY.md](SECURITY.md) for our security policy and how to report vulnerabilities.
 
-## Deployment
-
-### Automatic Deployment (CI/CD)
-
-The website automatically deploys to GitHub Pages on every push to `main`:
-
-```yaml
-# Triggered by changes to:
-- website/**
-- .github/workflows/deploy.yml
-
-# Deploys to:
-https://avinshi.com
-```
-
-**Manual Deployment:**
-```bash
-# Make changes to website
-cd website
-# Edit files...
-
-# Commit and push - auto-deploys!
-git add .
-git commit -m "Update website"
-git push
-```
-
-GitHub Actions will automatically:
-1. ✅ Build and test
-2. ✅ Deploy to GitHub Pages
-3. ✅ Update avinshi.com
-4. ✅ Notify you of status
-
-**View deployments:** [Actions tab](https://github.com/avinshi/avinshi/actions)
-
-## Roadmap
-
-- [x] Core agent platform (98.5% complete)
-- [x] Microsoft Semantic Kernel integration
-- [x] AutoGen multi-agent orchestration
-- [x] Self-analysis validation ($243K value demonstrated)
-- [x] Website with waitlist form
-- [x] CI/CD automatic deployment
-- [ ] Customer portal
-- [ ] Pricing page
-- [ ] Documentation site
-- [ ] Public API
-- [ ] Marketplace for custom agents
-
-## Security
-
-Built on Microsoft frameworks with enterprise security:
-- SOC 2 Type II compliance
-- Data never leaves your infrastructure
+Built on Microsoft frameworks with enterprise-grade security:
+- SOC 2 Type II compliance ready
 - End-to-end encryption
 - Role-based access control
 
-## Performance
+## 🤝 Contributing
 
-- **Response Time**: < 3 seconds average
-- **Availability**: 99.9% uptime
-- **Scale**: Handles 1000+ concurrent agents
-- **Efficiency**: 67% autonomous fix rate
+Interested in contributing? Join our waitlist and we'll reach out with opportunities to get involved!
+
+## 🌟 Star Us!
+
+If you're excited about autonomous AI agents, give us a star! ⭐
+
+---
+
+## 🚀 Launching Soon
+
+We're launching this Saturday (October 5, 2025) at 8 AM. Join the waitlist to be notified!
+
+**Website**: [avinshi.com](https://avinshi.com)  
+**Waitlist**: [Join now](https://avinshi.com)
 
 ---
 
