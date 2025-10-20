@@ -148,15 +148,6 @@ If you're excited about autonomous AI agents, give us a star! ⭐
 
 ---
 
-## 🚀 Launching Soon
-
-We're launching this Saturday (October 5, 2025) at 8 AM. Join the waitlist to be notified!
-
-**Website**: [avinshi.com](https://avinshi.com)  
-**Waitlist**: [Join now](https://avinshi.com)
-
----
-
 **Built with ❤️ using Microsoft Semantic Kernel and AutoGen**
 
 **© 2025 avinshi. all rights reserved.**
