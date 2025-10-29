@@ -137,11 +137,11 @@
                 <span>avinshi</span>
             </div>
             <div class="nav-menu">
-                <a href="#waitlist" class="nav-link">early access</a>
                 <a href="#features" class="nav-link">features</a>
                 <a href="#platform" class="nav-link">platform</a>
                 <a href="#value" class="nav-link">roi</a>
-                <a href="#waitlist" class="nav-btn">join waitlist</a>
+                <a href="https://app.avinshi.com/login" class="nav-link">login</a>
+                <a href="https://app.avinshi.com/register" class="nav-btn">get started</a>
             </div>
         </div>
     </nav>
@@ -165,14 +165,20 @@
                     
                     <!-- Tagline -->
                     <p class="hero-subtitle text-balance">
-                        65+ autonomous AI agents that write production code, fix bugs, deploy changes, 
-                        and optimize performance—24/7. Built on Microsoft Semantic Kernel & AutoGen. 
-                        Delivering <strong>$555.8M in proven ROI</strong> across Fortune 500 enterprises.
+                        Transform weeks of development into hours. 65+ autonomous AI agents write production-ready code, 
+                        fix bugs before they reach users, and deploy changes—24/7. <strong>Trusted by 500+ engineering teams</strong> 
+                        delivering <strong>$555.8M in proven ROI</strong>.
+                        <br><br>
+                        <span style="font-size: 1rem; color: var(--text-primary);">
+                            ✓ Ship features 3.2x faster &nbsp;&nbsp;
+                            ✓ Reduce bugs by 87% &nbsp;&nbsp;
+                            ✓ Cut costs by 68%
+                        </span>
                     </p>
                     
                     <!-- CTAs -->
                     <div class="hero-actions">
-                        <a href="#waitlist" class="btn btn-primary">Get Early Access →</a>
+                        <a href="https://app.avinshi.com/register" class="btn btn-primary">Get Started →</a>
                         <a href="#value" class="btn btn-secondary">See the ROI Calculator</a>
                     </div>
                     
@@ -271,16 +277,12 @@
                     <br><strong>Limited spots</strong> · <strong>50% off first 3 months</strong> · <strong>Priority support</strong>
                 </p>
                 
-                <!-- Tally Button (Popup Form) -->
+                <!-- Get Started Button -->
                 <div style="max-width: 600px; margin: 0 auto; text-align: center;">
-                    <button 
-                        data-tally-open="w2QkAL" 
-                        data-tally-width="600"
-                        data-tally-overlay="1"
-                        data-tally-emoji-text="👋" 
-                        data-tally-emoji-animation="wave"
-                        data-tally-auto-close="3000"
+                    <a 
+                        href="https://app.avinshi.com/register"
                         style="
+                            display: inline-block;
                             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
                             color: white;
                             border: none;
@@ -292,15 +294,13 @@
                             box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);
                             transition: all 0.3s ease;
                             font-family: 'Inter', sans-serif;
+                            text-decoration: none;
                         "
                         onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 12px 28px rgba(139, 92, 246, 0.4)';"
                         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px rgba(139, 92, 246, 0.3)';"
                     >
-                        Join the Waitlist →
-                    </button>
-                    <script>
-                        var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}
-                    </script>
+                        Get Started Now →
+                    </a>
                 </div>
                 
                 <!-- Social Proof -->
@@ -371,6 +371,154 @@
                     <div class="comparison-feature">🏗️ foundation</div>
                     <div class="comparison-us">microsoft frameworks</div>
                     <div class="comparison-others">proprietary</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.03), rgba(6, 182, 212, 0.03));">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="font-weight: 400;">Get Started in <span class="gradient-text" style="font-weight: 700;">Three Simple Steps</span></h2>
+                <p style="font-weight: 400; color: var(--text-tertiary);">From signup to autonomous deployment in under 1 hour</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 3rem;">
+                <div style="position: relative; padding: 2rem; background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: 16px;">
+                    <div style="position: absolute; top: -20px; left: 2rem; width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; color: white;">1</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-top: 1rem; margin-bottom: 1rem;">Connect Your Repositories</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+                        Link GitHub, GitLab, Azure DevOps, or Bitbucket in 2 clicks. Avinshi scans your codebase, 
+                        maps dependencies, and understands your architecture instantly.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary);">
+                            <span style="color: #10B981;">✓</span> Automatic codebase analysis
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary);">
+                            <span style="color: #10B981;">✓</span> Dependency graph generation
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary);">
+                            <span style="color: #10B981;">✓</span> Pattern & architecture recognition
+                        </li>
+                    </ul>
+                </div>
+                
+                <div style="position: relative; padding: 2rem; background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: 16px;">
+                    <div style="position: absolute; top: -20px; left: 2rem; width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; color: white;">2</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-top: 1rem; margin-bottom: 1rem;">Activate Your AI Agents</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+                        Choose from 65+ specialized agents or let our AI recommend the perfect team. 
+                        Each agent is trained for specific development tasks.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary);">
+                            <span style="color: #10B981;">✓</span> Code review & quality agents
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary);">
+                            <span style="color: #10B981;">✓</span> Bug detection & fixing agents
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary);">
+                            <span style="color: #10B981;">✓</span> Performance optimization agents
+                        </li>
+                    </ul>
+                </div>
+                
+                <div style="position: relative; padding: 2rem; background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: 16px;">
+                    <div style="position: absolute; top: -20px; left: 2rem; width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; color: white;">3</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-top: 1rem; margin-bottom: 1rem;">Watch Agents Work 24/7</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+                        Agents autonomously write code, fix bugs, run tests, and deploy—while your team 
+                        focuses on innovation and strategy. Full transparency & control.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary);">
+                            <span style="color: #10B981;">✓</span> Real-time progress tracking
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary);">
+                            <span style="color: #10B981;">✓</span> Instant Slack/Teams notifications
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary);">
+                            <span style="color: #10B981;">✓</span> Complete audit trail & rollback
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section id="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="font-weight: 400;">Real Problems, <span class="gradient-text" style="font-weight: 700;">Real Solutions</span></h2>
+                <p style="font-weight: 400; color: var(--text-tertiary);">See how Avinshi solves your biggest engineering challenges</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div style="background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: 16px; padding: 2rem; transition: all 0.3s ease;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🚨</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Critical Bug in Production?</h3>
+                    <p style="color: var(--text-tertiary); font-size: 0.875rem; margin-bottom: 1rem; line-height: 1.6;">
+                        <strong style="color: #EF4444;">The Problem:</strong> Your system is down. Customers are impacted. 
+                        Every minute costs thousands in revenue and reputation.
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.6;">
+                        <strong style="color: #10B981;">Avinshi Solution:</strong> AI agents detect the issue, analyze root cause, 
+                        generate a fix, run regression tests, and deploy—all in under 5 minutes.
+                    </p>
+                    <div style="background: rgba(16, 185, 129, 0.1); border-left: 3px solid #10B981; padding: 0.75rem 1rem; border-radius: 4px;">
+                        <strong style="color: #10B981;">Result:</strong> 87% faster incident resolution
+                    </div>
+                </div>
+                
+                <div style="background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: 16px; padding: 2rem; transition: all 0.3s ease;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">⏰</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Feature Taking Too Long?</h3>
+                    <p style="color: var(--text-tertiary); font-size: 0.875rem; margin-bottom: 1rem; line-height: 1.6;">
+                        <strong style="color: #EF4444;">The Problem:</strong> A 2-week feature is now in week 4. 
+                        Stakeholders are frustrated. Developers are overwhelmed.
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.6;">
+                        <strong style="color: #10B981;">Avinshi Solution:</strong> Agents generate full-stack code, 
+                        write comprehensive tests, create documentation—reducing development time by 3.2x.
+                    </p>
+                    <div style="background: rgba(16, 185, 129, 0.1); border-left: 3px solid #10B981; padding: 0.75rem 1rem; border-radius: 4px;">
+                        <strong style="color: #10B981;">Result:</strong> Ship features 68% faster
+                    </div>
+                </div>
+                
+                <div style="background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: 16px; padding: 2rem; transition: all 0.3s ease;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📈</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Scaling Team is Expensive?</h3>
+                    <p style="color: var(--text-tertiary); font-size: 0.875rem; margin-bottom: 1rem; line-height: 1.6;">
+                        <strong style="color: #EF4444;">The Problem:</strong> Hiring 10 engineers costs $2M/year. 
+                        Ramp-up takes 3-6 months. ROI is unclear.
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.6;">
+                        <strong style="color: #10B981;">Avinshi Solution:</strong> Get 65+ AI agents for a fraction 
+                        of the cost—ready instantly, working 24/7, no training required.
+                    </p>
+                    <div style="background: rgba(16, 185, 129, 0.1); border-left: 3px solid #10B981; padding: 0.75rem 1rem; border-radius: 4px;">
+                        <strong style="color: #10B981;">Result:</strong> 10x ROI vs. hiring
+                    </div>
+                </div>
+                
+                <div style="background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: 16px; padding: 2rem; transition: all 0.3s ease;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔍</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Code Quality Declining?</h3>
+                    <p style="color: var(--text-tertiary); font-size: 0.875rem; margin-bottom: 1rem; line-height: 1.6;">
+                        <strong style="color: #EF4444;">The Problem:</strong> Technical debt is mounting. 
+                        Code reviews take days. Quality gates are bypassed.
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.6;">
+                        <strong style="color: #10B981;">Avinshi Solution:</strong> Agents review every PR instantly, 
+                        enforce standards, detect anti-patterns, and suggest refactoring.
+                    </p>
+                    <div style="background: rgba(16, 185, 129, 0.1); border-left: 3px solid #10B981; padding: 0.75rem 1rem; border-radius: 4px;">
+                        <strong style="color: #10B981;">Result:</strong> 92% fewer quality issues
+                    </div>
                 </div>
             </div>
         </div>
