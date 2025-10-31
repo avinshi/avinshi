@@ -105,8 +105,8 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-primary);
 }
 
-h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); }
-h2 { font-size: clamp(2rem, 4vw, 3.5rem); }
+h1 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
+h2 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
 
 p {
@@ -147,43 +147,42 @@ p {
     max-width: 960px;
 }
 
-/* Navigation */
-.navbar {
+/* Site Header */
+.site-header {
     position: fixed;
-    top: var(--space-4);
-    left: 50%;
-    transform: translateX(-50%);
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
-    width: calc(100% - var(--space-8));
-    max-width: 1200px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-2xl);
-    box-shadow: var(--shadow-lg);
-    transition: all var(--transition-base);
+    border-bottom: 1px solid var(--border-subtle);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-.navbar:hover {
-    box-shadow: var(--shadow-xl);
-}
-
-.nav-container {
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--space-3) var(--space-8);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: var(--space-3) var(--space-6);
 }
 
-.nav-brand {
+.header-logo {
+    flex-shrink: 0;
+}
+
+.main-logo {
+    height: 150px;
+    width: auto;
+    display: block;
+}
+
+.header-nav {
     display: flex;
     align-items: center;
-}
-
-.nav-logo {
-    height: 40px;
-    width: auto;
 }
 
 .nav-menu {
@@ -240,7 +239,7 @@ p {
 
 /* Hero */
 .hero {
-    padding: calc(var(--space-24) + var(--space-20)) 0 var(--space-24);
+    padding: 200px 0 var(--space-12);
     background: var(--bg-primary);
     position: relative;
     overflow: hidden;
@@ -310,7 +309,7 @@ p {
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: -0.02em;

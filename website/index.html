@@ -132,28 +132,30 @@
 </head>
 <body>
 
-    <!-- Floating Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <img src="assets/logo/avinshi-logo.svg" alt="Avinshi" class="nav-logo">
+    <!-- Header with Logo and Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="assets/logo/avinshi-logo.svg" alt="Avinshi" class="main-logo">
             </div>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu" style="display: none; background: none; border: none; cursor: pointer; padding: 0.5rem;">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-            </button>
-            <div class="nav-menu">
-                <a href="#features" class="nav-link">features</a>
-                <a href="#platform" class="nav-link">platform</a>
-                <a href="#value" class="nav-link">roi</a>
-                <a href="https://app.avinshi.com/login" class="nav-link">login</a>
-                <a href="https://app.avinshi.com/register" class="nav-btn">get started</a>
-            </div>
+            <nav class="header-nav">
+                <button class="mobile-menu-toggle" aria-label="Toggle menu" style="display: none; background: none; border: none; cursor: pointer; padding: 0.5rem;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="nav-menu">
+                    <a href="#features" class="nav-link">features</a>
+                    <a href="#platform" class="nav-link">platform</a>
+                    <a href="#value" class="nav-link">roi</a>
+                    <a href="https://app.avinshi.com/login" class="nav-link">login</a>
+                    <a href="https://app.avinshi.com/register" class="nav-btn">get started</a>
+                </div>
+            </nav>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -635,9 +637,15 @@
     <!-- Footer -->
     <footer style="border-top: 1px solid var(--border-subtle); padding: 3rem 0; background: var(--bg-secondary);">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem;">
+            <!-- Footer Logo - Full Width -->
+            <div style="margin-bottom: 3rem; text-align: center;">
+                <img src="assets/logo/avinshi-logo.svg" alt="Avinshi" style="height: 150px; width: auto; display: inline-block;">
+            </div>
+            
+            <!-- Footer Content Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; align-items: start;">
                 <div>
-                    <img src="assets/logo/avinshi-logo.svg" alt="Avinshi" style="height: 36px; width: auto; margin-bottom: 1rem;">
+                    <div style="font-weight: 600; margin-bottom: 1rem; font-size: 0.875rem; color: var(--text-primary);">about</div>
                     <p style="font-size: 0.875rem; color: var(--text-secondary);">
                         ai agents that code, test, deploy, and optimize. built on microsoft frameworks.
                     </p>
