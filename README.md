@@ -1,10 +1,14 @@
-# avinshi
+<div align="center">
+  <img src="website/assets/Fiverr Premium Kit/PNG Logo Files/Original Logo.png" alt="Avinshi" width="200" />
+  
+  # avinshi
+  
+  **ai agents that code, test, deploy, and optimize—autonomously**
 
-**ai agents that code, test, deploy, and optimize—autonomously**
-
-[![Website](https://img.shields.io/badge/Website-avinshi.com-8B5CF6?style=for-the-badge)](https://avinshi.com)
-[![Waitlist](https://img.shields.io/badge/Join-Waitlist-06B6D4?style=for-the-badge)](https://avinshi.com)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+  [![Website](https://img.shields.io/badge/Website-avinshi.com-8B5CF6?style=for-the-badge)](https://avinshi.com)
+  [![Waitlist](https://img.shields.io/badge/Join-Waitlist-06B6D4?style=for-the-badge)](https://avinshi.com)
+  [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+</div>
 
 ## 🚀 Transform Your Engineering Team
 

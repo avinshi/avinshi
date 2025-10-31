@@ -40,11 +40,14 @@
     <meta name="twitter:url" content="https://avinshi.com">
     <meta name="twitter:title" content="Avinshi - AI Agents That Build Autonomously">
     <meta name="twitter:description" content="65+ specialized AI agents delivering $555.8M in documented ROI. Built on Microsoft frameworks. Transform your enterprise.">
-    <meta name="twitter:image" content="https://avinshi.com/assets/twitter-card.png">
+    <meta name="twitter:image" content="https://avinshi.com/assets/og-image.png">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     
     <!-- Styles -->
     <link rel="stylesheet" href="assets/style.css">
@@ -134,8 +137,18 @@
         <div class="nav-container">
             <div class="nav-brand">
                 <img src="assets/logo/avinshi-logo.svg" alt="Avinshi Logo" style="height: 28px; width: auto; margin-right: 0.5rem;">
-                <span>avinshi</span>
+                <div style="display: flex; flex-direction: column; line-height: 1.2;">
+                    <span>avinshi</span>
+                    <span style="font-size: 0.625rem; font-weight: 500; color: var(--text-tertiary); margin-top: -2px;">AI team</span>
+                </div>
             </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" style="display: none; background: none; border: none; cursor: pointer; padding: 0.5rem;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
             <div class="nav-menu">
                 <a href="#features" class="nav-link">features</a>
                 <a href="#platform" class="nav-link">platform</a>
@@ -266,7 +279,7 @@
                 <!-- Badge -->
                 <div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: 999px; font-size: 0.875rem; margin-bottom: 2rem;">
                     <span style="display: inline-block; width: 8px; height: 8px; background: #10B981; border-radius: 50%; animation: pulse 2s ease-in-out infinite;"></span>
-                    <span>🚀 launching this saturday, october 5, 2025</span>
+                    <span>🚀 launching soon</span>
                 </div>
                 
                 <h2 style="font-size: clamp(2rem, 4vw, 2.5rem); font-weight: 400; margin-bottom: 1rem;">
@@ -647,7 +660,7 @@
                 <div>
                     <div style="font-weight: 600; margin-bottom: 1rem; font-size: 0.875rem; color: var(--text-primary);">company</div>
                     <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.875rem;">
-                        <a href="#value" style="color: var(--text-secondary); text-decoration: none;">about</a>
+                        <a href="#features" style="color: var(--text-secondary); text-decoration: none;">about</a>
                         <a href="https://github.com/avinshi/avinshi" target="_blank" rel="noopener" style="color: var(--text-secondary); text-decoration: none;">github</a>
                         <a href="https://linkedin.com" target="_blank" rel="noopener" style="color: var(--text-secondary); text-decoration: none;">linkedin</a>
                         <a href="mailto:hello@avinshi.com" style="color: var(--text-secondary); text-decoration: none;">contact</a>
@@ -669,6 +682,27 @@
             </div>
         </div>
     </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileToggle = document.querySelector('.mobile-menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (mobileToggle && navMenu) {
+                mobileToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!event.target.closest('.navbar')) {
+                        navMenu.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
 
 </body>
 </html>
